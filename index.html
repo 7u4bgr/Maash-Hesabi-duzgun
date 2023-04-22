@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="input">
+    <button id="button">Click</button>
+
+
+    <script>
+        let input=document.querySelector("#input")
+        let button=document.querySelector("#button")
+        button.addEventListener("click",btn1);
+        function btn1() {
+            let maash=input.value*25
+            console.log(`maas:${maash}`);
+            document.write(`maas:${maash} Azn <br />` )
+            btn2(maash)
+        }
+        function btn2(maash) {
+            let vergi=maash / 20
+            maash=maash-vergi
+            console.log(`maas:${maash} Azn  vergi:${vergi} Azn`);
+            document.write(`maas:${maash} vergi:${vergi} Azn <br />` )
+            btn3(maash)
+        }
+        function btn3(maash) {
+            maash=maash-75
+            console.log(`maas:${maash} Azn  Sigorta:${75} Azn`);
+            document.write(`maas:${maash}  Sigorta:${75} Azn <br />` )
+            btn4(maash)
+        }
+        function btn4(maash) {
+            maash=maash-20
+            console.log(`maas:${maash} Azn   DSMF:${20} Azn`);
+            document.write(`maas:${maash}  DSMF:${20} Azn <br />` )
+            btn5(maash)
+        }
+        function btn5(maash) {
+            let komissiya=maash/20
+            maash=maash-komissiya
+            console.log(`maas:${maash} Azn   Komissiya:${komissiya} Azn`);
+            document.write(`maas:${maash}  Komissiya:${komissiya} Azn <br />` )
+            btn6(maash)
+        }
+        function btn6(maash) {
+            console.log(`maash:${Math.floor(maash)} Azn`);
+            document.write(`maash:${Math.floor(maash)} Azn`)
+        }
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
